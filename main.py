@@ -1,4 +1,4 @@
-import praw
+timport praw
 import scraping
 import re
 import praw.exceptions
@@ -7,8 +7,8 @@ import time
 import credentials
 
 reddit = praw.Reddit(
-    client_id="hNhzP-xZjm5OBXjbX0u1sg",
-    client_secret="gNtPCvUyqEjFJC_UjQwop4xxdGSuAw",
+    client_id=credentials.client_id,
+    client_secret=credentials.client_secret,
     user_agent="<console:AOE2:1.0>",
     username=credentials.username,
     password=credentials.password
@@ -24,7 +24,6 @@ with open("log_id.txt", "r") as log:
 log_id = open("log_id.txt", "a+")
 
 log = open("log.txt", "a+")
-
 
 try:
     for comment in subreddit.stream.comments():
