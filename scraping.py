@@ -243,4 +243,3 @@ for key in tech:
         tech_info.remove(value)
         break
 del tech_all["technology"]
-print(tech_all)
