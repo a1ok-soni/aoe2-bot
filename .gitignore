@@ -4,3 +4,4 @@ Procfile.bak
 .gitattributes
 /__pycache__
 /venv
+output.*
