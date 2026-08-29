@@ -1,4 +1,7 @@
 credentials.py
-__pycache__/credentials.cpython-310.pyc
 Procfile
+Procfile.bak
+.gitattributes
+/__pycache__
 /venv
+output.*
